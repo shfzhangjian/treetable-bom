@@ -1,0 +1,41 @@
+table.treetable{
+    width: 100%;
+    border: 1px solid #B6B4B6;
+}
+
+table.treetable thead {
+    background: #F3F3F3;
+}
+
+td,th{
+	text-align: center;
+	padding: 10px;
+}
+
+/**空格*/
+.trim-td {
+	border-left: 0;
+	border-right: 0;
+	padding: 0;
+}
+
+/**序号*/
+.number-td{
+	padding: 0;
+	border-right: 0;
+}
+
+/**父节点*/
+.parent-td {
+	text-align: left;
+	vertical-align: top;
+	padding: 2px 0 0 2px;
+}
+
+table.treetable tbody tr:hover {
+	background-color: rgba(250,230,160,0.3);
+}
+
+table.treetable tbody tr.matchItem {
+	background-color: rgba(250,230,160,0.9);
+}

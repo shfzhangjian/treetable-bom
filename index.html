@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="assets/treetable-wf/treetable-wf.css"/>
+</head>
+<style>
+    table.treetable {
+        width: 100%;
+        border: 1px solid black;
+    }
+
+    table.treetable thead {
+        background: transparent;
+    }
+</style>
+<style>
+    #wrapper {
+        width: 1329px;
+        /**width: 1745px;*/ /*打印时用这个尺寸*/
+        margin: 0 auto;
+        color: black;
+    }
+
+    .min-table {
+        border: 1px solid black;
+    }
+
+    .min-table td {
+        text-align: center;
+        padding: 3px 0px 3px 0px;;
+        overflow: hidden;
+    }
+
+    .input-none {
+        border: 0;
+        outline: none;
+        text-align: center;
+        padding: 0;
+    }
+</style>
+
+<body>
+<div id="wrapper">
+    <br>
+    <h2 class="text-center">M4L0A 内外作区分_PL 段确</h2>
+    <br>
+    <div class="pull-left">
+        <table border="1" class="min-table" width="280px">
+            <tr>
+                <td width="90px">客户名称</td>
+                <td><input type="text" class="input-none" style="width: 90px;"></td>
+            </tr>
+            <tr>
+                <td>客户图号</td>
+                <td>3401B221</td>
+            </tr>
+            <tr>
+                <td>社内图号</td>
+                <td>M4L0A-090-1B-CW</td>
+            </tr>
+            <tr>
+                <td>产品名称</td>
+                <td>PROPELLERA SHAFT ASSY</td>
+            </tr>
+            <tr>
+                <td>机种</td>
+                <td>M4L0A</td>
+            </tr>
+            <tr>
+                <td>车型代码</td>
+                <td>18M OUTLANDER</td>
+            </tr>
+        </table>
+    </div>
+    <div class="pull-left" style="margin-left: 30px;">
+        <table border="1" class="min-table">
+            <tr>
+                <td colspan="4">客户纳入基本日程</td>
+            </tr>
+            <tr>
+                <td width="40px">步骤</td>
+                <td>纳入日程</td>
+                <td>数量</td>
+                <td>提供处</td>
+            </tr>
+            <tr>
+                <td>PL</td>
+                <td><input type="text" class="input-none" style="width: 85px;"></td>
+                <td><input type="text" class="input-none" style="width: 35px;"></td>
+                <td><input type="text" class="input-none" style="width: 60px;"></td>
+            </tr>
+            <tr>
+                <td>PT</td>
+                <td><input type="text" class="input-none" style="width: 85px;"></td>
+                <td><input type="text" class="input-none" style="width: 35px;"></td>
+                <td><input type="text" class="input-none" style="width: 60px;"></td>
+            </tr>
+            <tr>
+                <td>PP</td>
+                <td><input type="text" class="input-none" style="width: 85px;"></td>
+                <td><input type="text" class="input-none" style="width: 35px;"></td>
+                <td><input type="text" class="input-none" style="width: 60px;"></td>
+            </tr>
+            <tr>
+                <td>SOP</td>
+                <td><input type="text" class="input-none" style="width: 85px;"></td>
+                <td><input type="text" class="input-none" style="width: 35px;"></td>
+                <td><input type="text" class="input-none" style="width: 60px;"></td>
+            </tr>
+        </table>
+    </div>
+    <div class="pull-right">
+        <table border="1" class="min-table">
+            <tr>
+                <td width="40px">3</td>
+                <td width="90px"></td>
+                <td width="150px"></td>
+                <td width="80px"></td>
+                <td width="80px"></td>
+                <td width="80px"></td>
+                <td width="80px"></td>
+                <td width="80px"></td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>0</td>
+                <td>2017-04-02</td>
+                <td>新规作成</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>修改</td>
+                <td>日期</td>
+                <td>修改记录</td>
+                <td>承认</td>
+                <td colspan="3">确认</td>
+                <td>作成</td>
+            </tr>
+        </table>
+    </div>
+    <div class="clearfix"></div>
+    <div style="margin-top: 10px;">
+        <table id="treeMenu" border="1" class="treetable">
+            <thead>
+            <tr>
+                <td colspan="8" id="td_gg">规格管理项目</td>
+                <td colspan="2">内外作区分</td>
+                <td rowspan="2">备注</td>
+            </tr>
+            <tr>
+                <td id="td_no">NO</td>
+                <td>设变NO</td>
+                <td>部品番号</td>
+                <td>英文名</td>
+                <td>中文名</td>
+                <td>台用量</td>
+                <td>工程</td>
+                <td>内外作</td>
+                <td>供应商</td>
+            </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+    </div>
+    <div class="pull-left" style="max-width: 300px;margin-top: 5px;">
+        <textarea rows="5" cols="100" class="input-none"
+                  style="text-align: left;overflow:hidden; resize:none;">注：</textarea>
+    </div>
+    <div class="pull-right" style="margin-top: 50px;">
+        <table border="1" class="min-table">
+            <tr>
+                <td width="80px">发行部门</td>
+                <td width="80px">生产技术科</td>
+                <td width="80px">制造科</td>
+                <td width="80px">营业购买科</td>
+                <td width="80px">生产管理科</td>
+                <td width="80px">品质管理科</td>
+                <td width="80px">合计</td>
+            </tr>
+            <tr>
+                <td>份数</td>
+                <td><input type="text" class="input-none" style="width: 80px;"></td>
+                <td><input type="text" class="input-none" style="width: 80px;"></td>
+                <td><input type="text" class="input-none" style="width: 80px;"></td>
+                <td><input type="text" class="input-none" style="width: 80px;"></td>
+                <td><input type="text" class="input-none" style="width: 80px;"></td>
+                <td><input type="text" class="input-none" style="width: 80px;"></td>
+            </tr>
+        </table>
+    </div>
+    <div class="clearfix"></div>
+    <br/>
+</div>
+
+<script type="text/javascript" src="assets/js/jquery-2.2.3.min.js"></script>
+<script type="text/javascript" src="assets/treetable-wf/treetable-wf.js"></script>
+<script>
+    $(function () {
+        $.get("assets/json/listBomTree.json", function (data) {
+            var maxCol = $.TreeTableWf("treeMenu", data);
+            $("#td_no").attr("colspan", maxCol);
+            $("#td_gg").attr("colspan", maxCol + 6);
+        }, "json");
+    });
+</script>
+</body>
+</html>
